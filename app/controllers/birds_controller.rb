@@ -44,7 +44,6 @@ class BirdsController < ApplicationController
     end
   end
 
-  # DELETE /birds/:id
   def destroy
     bird = Bird.find_by(id: params[:id])
     if bird
